@@ -161,6 +161,10 @@ ul {
   }
 }
 
+.menuBurguer {
+  margin: 10px;
+}
+
 span {
   margin-top: 110px;
   text-align: center;
