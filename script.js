@@ -9,7 +9,7 @@ const style = (selector, ...styles) => {
 const appendSelector = (selector, newChild) => {
   const getSelector = document.querySelector(selector);
   getSelector.addEventListener("click", () => {
-    getSelector.appendChild(newChild);
+  getSelector.appendChild(newChild);  
   });
 };
 
@@ -31,15 +31,10 @@ const burguerMenu = newSelector("div");
 
 style(
   burguerMenu,
-  "position:absolute; border: outset 3px; top: 0; height:200px; width:100px; z-index: 10; background-color:white; border-radius: 5%"
+  "position:absolute; border: outset 3px; top: 50px; left: 15px; height:200px; width:100px; z-index: 10; background-color:white; border-radius: 5%; background-color: rgba(58, 221, 221, 0.8);"
 );
 
 const nav = newSelector("div");
-
-style(
-  nav,
-  "font-weight: 500; text-transform: uppercase; display: flex; flex-direction: column; align-items: baseline; margin-top: 20px;"
-);
 
 constructNewElement(
   nav,
@@ -50,5 +45,15 @@ constructNewElement(
 );
 
 burguerMenu.appendChild(nav);
+nav.classList.add("navBurguerMenu")
 
 appendSelector(".toggleMenuContainer", burguerMenu);
+
+function menuClose() {
+  const selector = document.querySelector(".toggleMenuContainer");
+  selector.addEventListener("click", () => {
+    burguerMenu.classList.toggle("menuBurguerClosed");
+  });
+}
+
+menuClose();

@@ -161,10 +161,6 @@ ul {
   }
 }
 
-.menuBurguer {
-  margin: 10px;
-}
-
 span {
   margin-top: 110px;
   text-align: center;
@@ -197,7 +193,7 @@ span {
     grid-template-areas:
       "toggle title"
       "menuMobile menuMobile";
-      align-items: start;
+    align-items: start;
   }
 
   .toggleMenuContainer {
@@ -208,6 +204,24 @@ span {
     margin: 10px 0 0 20px;
     grid-area: toggle;
     padding-top: 10px;
+  }
+
+  .menuBurguer {
+    margin: 10px;
+    color: white;
+  }
+
+  .menuBurguerClosed {
+    display: none;
+  }
+
+  .navBurguerMenu {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 20px;
   }
 
   .title {
@@ -231,7 +245,7 @@ span {
     grid-area: menuMobile;
     justify-content: center;
     margin-top: 35px;
-    margin-right: 3.5em;    
+    margin-right: 3.5em;
   }
 
   a:hover {
@@ -290,6 +304,15 @@ span {
     transform: scale(1);
   }
 
+  @media (max-width: 1050px) and (orientation: landscape) {
+    .grid-of-products {
+      min-height: 1770vh;
+    }
+    .products {
+      grid-row: span 8;
+    }
+  }
+
   @media (max-width: 900px) {
     .grid-of-products {
       min-height: 170vh;
@@ -298,11 +321,11 @@ span {
 
   @media (max-width: 700px) {
     .grid-of-products {
-      min-height: 250vh;
+      min-height: 750vh;
     }
     .products {
-      grid-column: span 1.5;
-      grid-row: span 1.5;
+      grid-column: span 2;
+      grid-row: span 1.5  ;
     }
   }
 }
