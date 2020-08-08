@@ -82,6 +82,10 @@ aside > img {
   border: none;
 }
 
+.box[value] {
+  padding-left: 10px;
+}
+
 button {
   background-color: white;
   width: 230px;
