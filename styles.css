@@ -44,7 +44,7 @@ a {
 }
 
 .nav-menu a:hover {
-  color: rgb(169, 32, 223);
+  color: blueviolet;
   font-weight: 800;
   font-size: 1.2rem;
   text-decoration: overline;
@@ -208,7 +208,7 @@ span {
 
   .menuBurguer {
     margin: 10px;
-    color: white;
+    color: black;
   }
 
   .menuBurguerClosed {
@@ -304,12 +304,9 @@ span {
     transform: scale(1);
   }
 
-  @media (max-width: 1050px) and (orientation: landscape) {
+  @media (max-width: 1050px) {
     .grid-of-products {
-      min-height: 1770vh;
-    }
-    .products {
-      grid-row: span 8;
+      min-height: 170vh;
     }
   }
 

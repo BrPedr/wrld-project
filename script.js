@@ -31,7 +31,7 @@ const burguerMenu = newSelector("div");
 
 style(
   burguerMenu,
-  "position:absolute; border: outset 3px; top: 50px; left: 15px; height:200px; width:100px; z-index: 10; background-color:white; border-radius: 5%; background-color: rgba(58, 221, 221, 0.8);"
+  "position:absolute; border: outset 3px; top: 50px; left: 15px; height:200px; width:100px; z-index: 10; background-color: white;"
 );
 
 const nav = newSelector("div");
