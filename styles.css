@@ -44,7 +44,7 @@ a {
 }
 
 .nav-menu a:hover {
-  color: blueviolet;
+  color: rgb(226, 95, 43);
   font-weight: 800;
   font-size: 1.2rem;
   text-decoration: overline;
@@ -207,7 +207,7 @@ span {
   }
 
   .menuBurguer {
-    margin: 10px;
+    margin: 11px;
     color: black;
   }
 

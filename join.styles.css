@@ -63,58 +63,6 @@ aside > img {
 }
 
 /* form */
-.a-form {
-  color: blue;
-  font-size: 0.9em;
-}
-
-#password {
-  margin-bottom: 40px;
-}
-
-#email,
-#password {
-  width: 250px;
-  height: 40px;
-  background-color: rgb(240, 240, 240);
-  color: grey;
-  border: none;
-}
-
-button {
-  background-color: white;
-  width: 230px;
-  height: 50px;
-  margin-top: 40px;
-  font-weight: 700;
-  border-radius: 0 50px 50px 0;
-}
-
-#form-sign-in {
-  display: flex;
-  margin-left: 50%;
-  width: 50%;
-  height: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#form-sign-in > .signin-register {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin-top: 10%;
-}
-
-.join {
-  margin-left: 20px;
-}
-
-.form {
-  margin-top: 40px;
-}
-
 h2 {
   font-weight: 900;
   font-size: 2rem;
@@ -127,4 +75,61 @@ h3 {
 
 input {
   margin-bottom: 20px;
+}
+
+.a-form {
+  color: blue;
+  font-size: 0.9em;
+}
+
+.box {
+  min-width: 15vw;
+  min-height: 4.5vh;
+  background-color: rgb(240, 240, 240);
+  color: grey;
+  border: none;
+}
+
+.adress,
+.category {
+  min-width: 30vw;
+}
+
+.bio {
+  min-width: 40vw;
+  min-height: 15vh;
+  text-align: start;
+}
+
+button {
+  background-color: white;
+  width: 230px;
+  height: 50px;
+  margin-top: 40px;
+  font-weight: 700;
+  border-radius: 0 50px 50px 0;
+}
+
+#form-join {
+  display: flex;
+  margin-left: 40%;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#form-join > .join-register {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.join {
+  margin-left: 20px;
+}
+
+.form {
+  margin-top: 40px;
 }

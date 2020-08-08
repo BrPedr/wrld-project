@@ -31,14 +31,14 @@ const burguerMenu = newSelector("div");
 
 style(
   burguerMenu,
-  "position:absolute; border: outset 3px; top: 50px; left: 15px; height:200px; width:100px; z-index: 10; background-color: white;"
+  "position:absolute; box-shadow: 2px 2px 5px grey; border: outset 0 1px 1px; top: 55px; left: 15px; height:250px; width:120px; z-index: 10; background-color: white;"
 );
 
 const nav = newSelector("div");
 
 constructNewElement(
   nav,
-  ["join", "about", "artists", "contact"],
+  ["join", "about", "artists", "contact", "shop"],
   "a",
   "href",
   "menuBurguer"
