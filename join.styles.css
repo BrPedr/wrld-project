@@ -32,6 +32,7 @@ aside > img {
   text-align: right;
   font-size: 3rem;
   position: fixed;
+  font-weight: 900;
 }
 
 /* header */
@@ -40,7 +41,7 @@ aside > img {
   height: 120px;
   margin-left: 10%;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .nav-menu > li {
@@ -90,6 +91,7 @@ input {
   border: none;
 }
 
+.name,
 .adress,
 .category {
   min-width: 30vw;
@@ -108,6 +110,7 @@ button {
   margin-top: 40px;
   font-weight: 700;
   border-radius: 0 50px 50px 0;
+  border: solid 2px;
 }
 
 #form-join {
