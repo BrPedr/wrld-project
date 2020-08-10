@@ -70,6 +70,7 @@ a {
 
 .nav-profile {
   width: 100%;
+  padding: 0 13.5rem;
 }
 
 .nav-mobile {
@@ -115,19 +116,18 @@ ul {
   height: 80em;
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* grid-template-rows: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 300px;
-  gap: 30px;
+  gap: 20px;
 }
 
-.grid-column-span2 {
+/* .grid-column-span2 {
   grid-column: span 2;
 }
 
 .grid-row-span2 {
   grid-row: span 2;
-}
+} */
 
 .product-wraper {
   border-radius: 5%;

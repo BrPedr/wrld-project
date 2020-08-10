@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -107,7 +108,7 @@ input {
 }
 
 .bio[value] {
-  padding: 0 0 80px 10px;
+  padding-bottom: 80px;
 }
 
 button {
@@ -118,6 +119,7 @@ button {
   font-weight: 700;
   border-radius: 0 50px 50px 0;
   border: solid 2px;
+  margin-bottom: 20px;
 }
 
 #form-join {
