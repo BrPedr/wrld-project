@@ -40,14 +40,13 @@ class UI {
     let result = "";
     products.forEach((product) => {
       result += `
-        <img src=""
+        <div
           class="products product-wraper"
           style="
-            background: url(${product.image})
-              no-repeat center;
+            background: url(${product.image}) no-repeat center;
             background-size: cover;
           "
-        >
+        ></div>
       `;
     });
 

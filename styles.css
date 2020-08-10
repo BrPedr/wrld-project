@@ -33,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
+  box-sizing: border-box;
 }
 
 .toggleMenuContainer {
@@ -47,14 +48,16 @@ a {
 .nav-menu a:hover {
   color: rgb(226, 95, 43);
   font-weight: 800;
-  font-size: 1.2rem;
   text-decoration: overline;
 }
 
 .nav-menu {
-  margin-left: 400px;
-  font-weight: 500;
-  font-size: 1.2rem;
+  display: flex;
+  margin-left: calc(20% - 40px);
+  font-weight: 600;
+  font-size: 1rem;
+  
+  flex: 1 4 auto;
 }
 
 .nav-menu,
@@ -69,8 +72,9 @@ a {
 }
 
 .nav-profile {
-  width: 100%;
-  padding: 0 13.5rem;
+  display: flex;
+  /* padding: 0 13.5rem; */
+  flex: 4 2 auto; 
 }
 
 .nav-mobile {

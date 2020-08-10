@@ -20,6 +20,8 @@
       />
     </aside>
     <header>
+
+      <!-- button for mobile devices  -->
       <div class="toggleMenuContainer">
         <img
           src="hamburguer-button.png"
@@ -27,6 +29,7 @@
           style="width: 40px; background-color: white;"
         />
       </div>
+      <!-- end of button for mobile devices  -->
 
       <h1 class="title">
         World &nbsp &nbsp &nbsp <br />
@@ -40,7 +43,7 @@
         </ul>
       </nav>
 
-      <nav>
+      <nav class="nav-menu">
         <ul class="nav-menu">
           <li><a class="navJoin" href="join.html">join</a></li>
           <li><a href="about.html">about</a></li>
@@ -48,10 +51,10 @@
           <li><a href="contact.html">contact</a></li>
           <li><a href="shop.html">shop</a></li>
         </ul>
-      </nav>
+      </navclass="nav-menu">
 
-      <!-- substitute the img by an input with the icon -->
-      <nav>
+      <!-- icons for search, cart and profile -->
+      <nav class="nav-profile">
         <ul class="nav-profile">
           <svg
             width="5em"
@@ -70,7 +73,7 @@
               d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
             />
           </svg>
-          <svg
+          <svg 
             width="5em"
             height="1.5em"
             viewBox="0 0 16 16"
@@ -83,33 +86,21 @@
               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
             />
           </svg>
-          <!-- substitute the img by a notification path -->
           <a href="sign-in.html">
-            <svg
-              width="5em"
-              height="1.7em"
-              viewBox="0 0 16 16"
-              class="bi bi-person-plus"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM1.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM6 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm4.5 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"
-              /></svg
-          ></a>
-          <!-- substitute the img by a profile pic -->
+            <svg width="5em" height="1.7em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                </svg>
+          </a>
         </ul>
       </nav>
+      <!-- end of icons for search, cart and profile -->
+
     </header>
 
     <!-- container with artists and products -->
     <main class="main-container">
-
       <!-- displayed artists -->
       <div class="row-of-artists">
         <div
@@ -335,9 +326,8 @@
             background-size: cover;
           "
         ></div>-->
-      </div> 
+      </div>
       <!-- end of grid of products -->
-
     </main>
     <!-- end of container with artists and products -->
 
