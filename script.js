@@ -40,7 +40,7 @@ class UI {
     let result = "";
     products.forEach((product) => {
       result += `
-        <div
+       <div id=${product.id}
           class="products product-wraper"
           style="
             background: url(${product.image}) no-repeat center;
@@ -121,3 +121,8 @@ function menuClose() {
 }
 
 menuClose();
+
+// const img = document.querySelector(".grid-of-products")
+// img.addEventListener("click", () => {
+//   const url = img.childNodes;
+// });
