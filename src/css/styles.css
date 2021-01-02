@@ -79,10 +79,6 @@ a {
   padding: 0;
 }
 
-.nav-mobile {
-  display: none;
-}
-
 ul {
   list-style-type: none;
 }
@@ -117,24 +113,6 @@ ul {
   transform: scale(1.1);
 }
 
-.grid-of-products {
-  width: calc(100% - 0.5vw);
-  height: 80rem;
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: 300px;
-  gap: 20px;
-}
-
-/* .grid-column-span2 {
-  grid-column: span 2;
-}
-
-.grid-row-span2 {
-  grid-row: span 2;
-} */
-
 .product-wraper {
   border-radius: 5%;
   transition: 2s;
@@ -152,9 +130,6 @@ ul {
 }
 
 @media (max-width: 1500px) {
-  .grid-of-products {
-    height: 200vh;
-  }
   .grid-column-span2 {
     grid-column: span 1;
   }
@@ -218,10 +193,6 @@ span {
     color: black;
   }
 
-  .menuBurguerClosed {
-    display: none;
-  }
-
   .navBurguerMenu {
     font-weight: 700;
     text-transform: uppercase;
@@ -247,11 +218,10 @@ span {
   }
 
   .nav-mobile {
-    display: grid;
+    display: flex;
     text-align: center;
-    grid-area: menuMobile;
-    justify-content: center;
-    margin-top: 35px;
+    justify-content: flex-end;
+    margin-bottom: 3.5em;
     margin-right: 3.5em;
   }
 
@@ -311,22 +281,7 @@ span {
     transform: scale(1);
   }
 
-  @media (max-width: 1050px) {
-    .grid-of-products {
-      min-height: 170vh;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .grid-of-products {
-      min-height: 170vh;
-    }
-  }
-
   @media (max-width: 700px) {
-    .grid-of-products {
-      min-height: 750vh;
-    }
     .products {
       grid-column: span 2;
       grid-row: span 1.5  ;
