@@ -2,7 +2,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="shop.styles.css" />
+    <link rel="stylesheet" href="./src/css/shop.styles.css" />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/skeleton.css" />
+    <link rel="stylesheet" href="./src/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -29,10 +32,139 @@
           <li><a class="menu" href="about.html">about</a></li>
           <li><a class="menu" href="artists.html">artists</a></li>
           <li><a class="menu" href="contact.html">contact</a></li>
+          <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                        <img src="img/cart.png" id="img-cart">
+                        <div id="shopping-cart">
+                                <table id="cart-content" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
         </ul>
       </nav>
+
+      
     </header>
-<body>
-    
+
+<div id="courses-list" class="container">
+    <h1 id="heading" class="heading">Choose Your Art To Shop</h1>
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/course1.jpg" class="course-image u-full-width">
+                <div class="info-card">
+                    <h4>Amazing Art of Frida Kahlo</h4>
+                    <p>Frida Kahlo</p>
+                    <img src="img/stars.png">
+                    <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                    <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to Cart</a>
+                </div>
+            </div> <!--.card-->
+        </div>
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/course2.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Amazing Art of Van Gogh</h4>
+                        <p>Van Gogh</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to Cart</a>
+                    </div>
+                </div>
+        </div>
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/course3.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Amazing Art of O'Keeffe</h4>
+                        <p>O'Keeffe</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+        </div>
+
+    </div> <!--.row-->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/course4.jpg" class="course-image u-full-width">
+                <div class="info-card">
+                    <h4>Amazing Art of Ringgold</h4>
+                    <p>Ringgold</p>
+                    <img src="img/stars.png">
+                    <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                    <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to Cart</a>
+                </div>
+            </div> <!--.card-->
+        </div>
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/course5.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Amazing Art of Ansel Adams</h4>
+                        <p>Ansel Adams</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+        </div>
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/course1.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Amazing Art of Eve Arnold</h4>
+                        <p>Eve Arnold</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+        </div>
+    </div> <!--.row-->
+    <div class="row">
+        <div class="four columns">
+            <div class="card">
+                <img src="img/course2.jpg" class="course-image u-full-width">
+                <div class="info-card">
+                    <h4>Amazing Art of Andy Warhol</h4>
+                    <p>Andy Warhol</p>
+                    <img src="img/stars.png">
+                    <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                    <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Add to Cart</a>
+                </div>
+            </div> <!--.card-->
+        </div>
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/course3.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Amazing Art of Leibovitz</h4>
+                        <p>Leibovitz</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+        </div>
+</div>
+<script src="./src/js/shop.js"></script>
 </body>
 </html>
